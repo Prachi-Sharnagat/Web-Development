@@ -174,3 +174,28 @@ const userFunction =() => {
 userFunction();
 
 //? arrow function
+// const addTwoNum = (num1, num2) =>{
+//     return num1 + num2 
+// }
+
+const addTwoNumAgain = (num1, num2) => (num1 + num2); // same: implicit return without return keyword in paranthesis
+const returnobj = (num1, num2) => ({username:"prachi"}); // return obj
+
+// immediately involked function expressions
+// uses : 1. To avoid polluting the global scope
+// 2. To execute code immediately
+
+(function callImediately(){
+    let secret = 420;
+    console.log(`${secret} is secret`)
+})();
+
+// arrow funcction 
+((name)=> {
+    console.log(`hello ${name}`)
+})("prachi"); // semicolon must for end 
+
+(function hello(name) {
+    // named iife
+    console.log(`hello ${name}`)
+})("prachi"); // semicolon must for end 
