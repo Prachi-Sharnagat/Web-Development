@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body style="background-color: #000000; color: white;">
+    <div class="parent" >
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+
+    </div>
+
+
+    <script>
+        const parent = document.querySelector('.parent')
+        console.log(parent);
+        console.log(parent.children)
+        console.log(parent.children[1])
+        console.log(parent.children[1].innerHTML)
+
+        for(let i=0; i<parent.children.length; i++){
+            console.log(parent.children[i].innerHTML);
+        }
+        parent.children[2].style.color = "red"
+        // first value select: 
+        console.log(parent.firstElementChild);
+        // last way select:
+        console.log(parent.lastElementChild)
+
+        // first value select way :
+        const firstValue = document.querySelector('.day');
+        console.log(firstValue); 
+        console.log(firstValue.parentElement)
+        // second value :
+        console.log(firstValue.nextElementSibling)
+
+        console.log("Nodes: ", parent.childNodes);
+        
+        
+
+    </script>
+</body>
+</html>
