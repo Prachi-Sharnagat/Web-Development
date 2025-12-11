@@ -18,6 +18,12 @@
     div.id = Math.round(Math.random()*10 + 1)
 
     div.setAttribute("title", "generated title")
+    div.style.background = "green"
+    div.style.padding = "15px"
+ //   div.innerHTML = "prachi sharnagat "
+    const addText = document.createTextNode("prachi sharnagat")
+    div.appendChild(addText)
 
+    document.body.appendChild(div)
 </script>
 </html>
